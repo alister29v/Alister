@@ -1,0 +1,38 @@
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.blender {
+    position: relative;
+    width: 350px;
+    height: 500px;
+    background-image: url('https://chancafeq.pe/wp-content/uploads/BLSTKAGWRD.jpg.webp');
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.blender.active {
+    background-image: url('https://webappstatic.buzzfeed.com/static/enhanced/terminal05/2012/10/25/16/anigif_enhanced-buzz-2725-1351196074-1.gif');
+}
+
+.blender-button {
+    position: absolute;
+    bottom: 50px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    background-color: rgba(181, 38, 38, 0.8); /* Cambia el color para hacerlo visible */
+    cursor: pointer;
+}
